@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+
+    android:id="@+id/rel"
+    tools:context="com.wedddingapp.shankar.sortinglist.MainActivity">
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/b1"
+       android:text="Ascending"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descending"
+        android:layout_alignParentRight="true"
+        android:id="@+id/b2"/>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/s1"
+
+        android:layout_below="@id/b2" />
+
+
+
+    <ListView
+        android:layout_below="@id/s1"
+        android:textColor="@color/white"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/monthslist"/>
+
+
+
+
+</RelativeLayout>
